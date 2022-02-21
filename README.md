@@ -18,7 +18,31 @@ information: id([int]primary key, not null, unique, auto incremental),
           surname([varchar(45)] not null),
           birthdate([varchar(45)] not null),
           adress([varchar(45)] not null),
-          *info_id([int] not null, unique),
+          *info_id([int] not null, unique)*,
           gender([char(6)] not null)
           
-*info_id is information(id)
+*person(info_id) = information(id)   foreign key*
+
+
+accounts: id([int] primariy key, not null, unique, auto incremental),
+          *person_id([int] not null)*,
+          iban([varchar(45)] not null, unique),
+          account_type([varchar(45)] not null),
+          amountTL([int] not null),
+          amountUSD([int] not null),
+          amountEUR([int] not null)
+          
+*account(person_id) = person(id)   foreign key*
+
+
+logs: id([int] primary key, not null, unique, auto incremental),
+      process_time([varchar(45)] not null),
+      process([varchar(45)] not null),
+      username([varchar(45)] not null)
+      
+      
+ <h1> How to use </h1>
+ 
+ Open the folder in vscode or something.
+ Write on the terminal this command: python welcomeWindow.py
+          
