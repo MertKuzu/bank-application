@@ -1,7 +1,8 @@
 # bank-application
 
-You need to have local db in your computer and you have to download all libraries that i used in the application. If you want to use.
-I used MySQL for local db.
+You need to have local db in your computer and you have to download all libraries that i used in the application if you want to use.
+
+Note: I used MySQL for local db.
 
 Local Database tables must be like this:
 
