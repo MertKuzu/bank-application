@@ -44,6 +44,6 @@ logs: id([int] primary key, not null, unique, auto incremental),
       
  <h1> How to use </h1>
  
- Open the folder in vscode or something like that.
- Write on the terminal this command: python welcomeWindow.py
+ Open the folder in vscode or any other similer ide and
+ write "python welcomeWindow.py" on the terminal this command
           
